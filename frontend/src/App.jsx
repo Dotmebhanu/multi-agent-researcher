@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
-const API_BASE = "https://multi-agent-researcher-xikc.onrender.com";
-
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
 const AGENTS = [
   {
     key: "searcher",
