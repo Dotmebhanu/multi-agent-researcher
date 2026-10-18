@@ -17,10 +17,11 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "https://multi-agent-researcher-84s3.vercel.app/"  # your actual vercel URL
-    ],
+   allow_origins=[
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "https://multi-agent-researcher-84s3.vercel.app",
+],
     allow_methods=["*"],
     allow_headers=["*"],
 )
